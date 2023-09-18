@@ -26,3 +26,12 @@
    그렇기 때문에 true, false 값을 비교문 값으로 넣으면 반대값이 나온다.
 4. strcmp 함수를 사용해서 반환값이 0이면 암호가 일치하기 때문에 break문으로 탈출하며, 틀릴 경우 반복적으로 돌아가기 위해 while 문을
    사용하였다.
+
+    // strcmp(password, "C++") == true로 하면 반대 값이 나오니 == 0이 참일 걸 기억할 것.
+		if (strcmp(password, "C++") == 0) {
+			cout << "접속 완료" << endl;
+			break;
+		}
+		else {
+			cout << "암호 땡~~" << endl;
+		}
