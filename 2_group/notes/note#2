@@ -16,8 +16,12 @@
 - '\0'로 끝나는 문자배열 : C-스트링 방식이며, '\0\' 공간이 없이 끝나는 배열은 단순 문자 배열이다.
 - 문자열을 사용하기 위해선 <cstring> 이나 <string.h> 헤더 파일을 포함시켜야 한다.
 - 문자열을 빈 칸 없이 키 입력해야 한다. 빈 칸을 만나면 문자열 입력 종료 ex) 마 이 클 -> 마 까지 출력
+- cin.getline()으로 공백이 낀 문자열 입력
+  cin.getline(char buf[], int size, char delimitChar)
+  ex) char address[100];
+      cin.getline(address,100,'\n');  //최대 99개의 문자를 읽어 address 배열에 저장하고, 도중에 <Enter>키를 만나면 입력을 중단한다.
 
-예제 2-5 정리
+※ 예제 2-5 정리
 0. iostream, cstrring 헤더파일 선언, using namespace std 선언.
 1. 문자열 password 선언
 2. while 문을 통해서 cin 값 password를 받는다.
@@ -50,3 +54,5 @@ int main() {
 	}
 	return 0;
 }
+
+
