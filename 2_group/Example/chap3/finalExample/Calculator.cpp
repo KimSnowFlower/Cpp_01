@@ -4,9 +4,9 @@
 using namespace std;
 
 void Calculator::run() {
-	cout << "µÎ °³ÀÇ ¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä>>";
+	cout << "ë‘ ê°œì˜ ìˆ˜ë¥¼ ìž…ë ¥í•˜ì„¸ìš”>>";
 	int a, b;
-	cin >> a >> b; // Á¤¼ö µÎ °³ ÀÔ·Â
-	Add adder(a, b); // µ¡¼À±â »ý¼º
-	cout << adder.process(); // µ¡¼À °è»ê
+	cin >> a >> b;
+	Add adder(a, b);
+	cout << adder.process();
 }
