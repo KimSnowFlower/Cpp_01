@@ -5,7 +5,7 @@
 #include <iostream>
 using namespace std;
 
-class Add { // µ¡¼À ¸ðµâ Å¬·¡½º
+class Add {
 	int op1, op2;
 public:
 	Add(int a, int b);
